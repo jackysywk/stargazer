@@ -33,9 +33,8 @@ local function saveScores()
 	end
 
 	local file = io.open(filePath, "w")
-
 	if file then
-		file:write(json.encode(scoresTableO))
+		file:write(json.encode(scoresTable))
 		io.close(file)
 	end
 end
